@@ -1,0 +1,6 @@
+setup.py
+prontuariofacil.egg-info/PKG-INFO
+prontuariofacil.egg-info/SOURCES.txt
+prontuariofacil.egg-info/dependency_links.txt
+prontuariofacil.egg-info/requires.txt
+prontuariofacil.egg-info/top_level.txt
