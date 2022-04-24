@@ -10,7 +10,7 @@ def create_app():
     config.init_app(app)
     database.init_app(app)
     cli.init_app(app)
-    view.init_app(app)
+    
     @app.route('/')
     def comeco():
         return "comeco"
