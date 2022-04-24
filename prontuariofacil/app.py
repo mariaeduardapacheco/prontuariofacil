@@ -1,6 +1,6 @@
 from flask import Flask
 
-from prontuariofacil.ext import view
+from ext import view
 from prontuariofacil.ext import database
 from prontuariofacil.ext import config
 from prontuariofacil.ext import cli
