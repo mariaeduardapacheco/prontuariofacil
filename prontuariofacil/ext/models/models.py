@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-from prontuariofacil.ext.database import db
+from ext.database import db
 
 class Prontuario(db.Model):
     __tablename__ = "prontuario"
