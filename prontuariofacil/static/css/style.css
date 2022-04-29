@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&family=Rasa&family=Roboto&family=Rouge+Script&family=Stick+No+Bills:wght@300&display=swap&family=Strait&display=swap');
+
+:root{
+    --cor01: #70ADA2;
+    --cor02: #497493;
+    --cor03: #82FCE6;
+
+    --font-titulo: Rouge Script, Helvetica, sans-serif;
+    --font-pront: Rasa Helvetica, sans-serif;
+    --font-facil: Princess Sofia, Arial, Verdana, Helvetica, sans-serif; 
+    --font-padrao01: Strait Arial, Verdana, Helvetica, sans-serif; 
+    --font-padrao02: Roboto, Verdana, Helvetica, sans-serif; 
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: var(--cor01);
+    margin: 2rem;
+}
+header h1{
+    font-family: var(--font-titulo);
+    font-weight: lighter;
+    font-size: 10rem;
+    color: white;
+    text-align: center;
+}
+div.container{    
+    padding: 10px;
+    display: block;
+    margin: auto;
+    min-width: 530px;
+    max-width: 1200px;
+    min-height: 850px;
+    right: 458px;
+    bottom: 17px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), var(--cor03);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.texto{
+    text-align: center;
+}
+
+div.texto > h2{
+    margin-right: 8rem;
+    font-family: var(--font-pront);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+div.texto h3{
+    font-family: var(--font-facil);
+    font-weight: lighter;
+    margin-left: 3rem;
+    font-size: 48px;
+    line-height: 58px;
+
+}
+.linha{
+    margin: auto;
+    width: 75%;
+    
+}

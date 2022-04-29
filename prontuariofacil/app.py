@@ -1,9 +1,9 @@
 from flask import Flask
 
-from ext import view
-from ext import database
-from ext import config
-from ext import cli
+from prontuariofacil.ext import view
+from prontuariofacil.ext import database
+from prontuariofacil.ext import config
+from prontuariofacil.ext import cli
 
 def create_app():
     app = Flask(__name__)

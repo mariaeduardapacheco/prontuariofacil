@@ -14,6 +14,5 @@ def forms():
 
 @bp.route("/user/add", methods=['GET','POST'])
 def add_user():
-    user = Medico()
-    
-    return render_template('user_add.html',form=form)
+    user = Medico()    
+    return render_template('user_add.html',user=user)
