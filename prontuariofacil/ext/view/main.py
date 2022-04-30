@@ -16,3 +16,7 @@ def forms():
 def add_user():
     user = Medico()    
     return render_template('user_add.html',user=user)
+
+@bp.route("/cadastro-prontuario")
+def cadastroPront():
+    return render_template("cadastroPront.html")
