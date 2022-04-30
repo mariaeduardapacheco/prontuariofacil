@@ -1,6 +1,6 @@
 import click
-from prontuariofacil.ext.database import db
-from prontuariofacil.ext.models import models
+from ext.database import db
+from ext.models import models
 
 def init_app(app):
 
