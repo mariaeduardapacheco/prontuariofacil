@@ -12,6 +12,7 @@
     {% block header %}
     <h1>Bem vindo ao ProntFácil</h1>
     {% endblock header %}
+  {% block content %}
     <div class="container">
       <div class="flex-texto">
           <div class="text-item">
@@ -21,13 +22,14 @@
             <h3>Fácil</h3>
           </div>
       </div>
+        <a href="{{url_for("view.index")}}"><button type="submit" class="btn-voltar">Voltar</button></a>
     </div>
   </header>
 <div class="container">
-    <div class="flex-container">
-      <div class="flex-button">
-        <a href="#"><button type="submit" class="button">Login</button></a>
-      </div>
+  <div class="flex-container">
+    <div class="flex-button">
+      <a href="#"><button type="submit" class="button">Login</button></a>
+    </div>
       <div class="flex-button">
         <a href="#"><button type="submit" class="button">Recuperação de senha</button></a>
       </div>
@@ -38,19 +40,20 @@
         <a href="#"><button type="submit" class="button">Cadastro do médico(a)</button></a>
       </div>
       <div class="flex-button">
-        <a href="{{url_for("view.cadastroPront")}}"><button type="submit" class="button">Cadastrar Prontuário</button></a>
+        <a href="{{url_for("view.cadastroPront")}}"><button type="submit" class="button" class="tela-feita">Cadastrar Prontuário</button></a>
       </div>
       <div class="flex-button">
-        <a href="#"><button type="submit" class="button">Consulta de Prontuaáio</button></a>
+        <a href="#"><button type="submit" class="button">Consulta de Prontuário</button></a>
       </div>
+    </div>
+    
   </div>
-        
-</div>
-
+  
+  {% endblock content%}
 </body>
 
 <footer>
-
+  
 </footer>
 
 </html>

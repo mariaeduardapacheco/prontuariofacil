@@ -1,5 +1,44 @@
 {% extends "base.html" %}
 
 {% block header %}
-<h1>Consulta de Prontuário</h1>
+<h1>Cadastro do prontuário do paciente</h1>
 {% endblock %}
+
+{% block content %}
+<div class="container">
+    <form action="" method="post">
+        <fieldset class="grid"> 
+            <div>
+                <label for="nome">Nome completo do paciente</label>
+                <input type="text" nome="nome" id="nome" required>
+            </div>
+            <div>
+                <label for="cpf">CPF</label>
+                <input type="text" nome="cpf" id="cpf" required>
+            </div>
+            <div>
+                <label for="nascimento">Data de nascimento</label>
+                <input type="date" nome="nascimento" id="nascimento">
+            </div>
+            <div>
+                <label for="sus">Cartão SUS</label>
+                <input type="text" nome="sus" id="sus" required>
+            </div>
+            <div>
+                <label for="alergias">Alergias</label>
+                <input type="text" nome="alergias" id="alergias">
+            </div>
+            <div>
+                <label for="doençaspre">Doenças pré existentes</label>
+                <input type="text" nome="doençaspre" id="doençaspre">
+            </div>
+            <div>
+                <label for="historico">Histórico familiar</label>
+                <input type="text" nome="historico" id="historico">
+            </div>
+        </fieldset>
+            <a  href="#"><button class="btn-confirmar" type="submit">Confirmar cadastro</button></a>           
+    </form>
+</div>
+
+{% endblock content%}
