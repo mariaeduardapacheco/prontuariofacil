@@ -20,3 +20,23 @@ def add_user():
 @bp.route("/cadastro-prontuario")
 def cadastroPront():
     return render_template("cadastroPront.html")
+
+@bp.route("/recuperacao-de-senha")
+def resenha():
+    return render_template("recupSenha.html")
+
+@bp.route("/cadastro-medico")
+def cadastroMedico():
+    return render_template("cadastroMedico.html")
+
+@bp.route("/consulta-prontuario")
+def consultaProntuario():
+    return render_template("consultaProntuario.html")
+
+@bp.route("/login")
+def login():
+    return render_template("login.html")
+
+@bp.route("/escolha")
+def escolha():
+    return render_template("opcaoEscolha.html")
