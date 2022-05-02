@@ -6,38 +6,45 @@
 
 {% block content %}
 <div class="container">
-    <form action="" method="post">
+    <form action="{{url_for("view.cadastro_pront")}}", method="post">
         <fieldset class="grid"> 
             <div>
-                <label for="nome">Nome completo do paciente</label>
-                <input type="text" nome="nome" id="nome" required>
+                {{ prontuario.hidden_tag() }}
+                {{ prontuario.nome.label }}
+                {{ prontuario.nome() }}
             </div>
             <div>
-                <label for="cpf">CPF</label>
-                <input type="text" nome="cpf" id="cpf" required>
+                {{ prontuario.hidden_tag() }}
+                {{ prontuario.cpf.label}}
+                {{ prontuario.cpf()}}
             </div>
             <div>
-                <label for="nascimento">Data de nascimento</label>
-                <input type="date" nome="nascimento" id="nascimento">
+                {{ prontuario.hidden_tag() }}
+                {{ prontuario.nasc.label }}
+                {{ prontuario.nasc(id="nascimento")}}
             </div>
             <div>
-                <label for="sus">Cartão SUS</label>
-                <input type="text" nome="sus" id="sus" required>
+                {{ prontuario.hidden_tag() }}
+                {{ prontuario.sus.label }}
+                {{ prontuario.sus() }}
             </div>
             <div>
-                <label for="alergias">Alergias</label>
-                <input type="text" nome="alergias" id="alergias">
+                {{ prontuario.hidden_tag() }}
+                {{ prontuario.alergia.label }}
+                {{ prontuario.alergia() }}
             </div>
             <div>
-                <label for="doençaspre">Doenças pré existentes</label>
-                <input type="text" nome="doençaspre" id="doençaspre">
+                {{ prontuario.hidden_tag() }}
+                {{ prontuario.doenca.label }}
+                {{ prontuario.doenca() }}
             </div>
             <div>
-                <label for="historico">Histórico familiar</label>
-                <input type="text" nome="historico" id="historico">
+                {{ prontuario.hidden_tag() }}
+                {{ prontuario.historico.label }}
+                {{ prontuario.historico() }}
             </div>
         </fieldset>
-            <a  href="#"><button class="btn-confirmar" type="submit">Confirmar cadastro</button></a>           
+            {{ prontuario.submit() }}
     </form>
 </div>
 

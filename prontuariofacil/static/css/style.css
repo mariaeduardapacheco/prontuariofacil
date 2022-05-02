@@ -189,7 +189,7 @@ form{
     line-height: 39px;
 }
 
-.btn-confirmar{
+#submit{
     position: relative;
     top: -2rem;
     display: block;
@@ -222,13 +222,13 @@ form{
     font-size: 1.5rem;
 }
 
-#alergias{
+#alergia{
     width: 100%;    
     margin: auto;
     padding: 0.5rem;
     font-size: 1.5rem;
 }
-#doençaspre{
+#doenca{
     width: 100%;    
     margin: auto;
     padding: 0.5rem;
