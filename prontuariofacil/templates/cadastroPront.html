@@ -7,7 +7,8 @@
 {% block content %}
 <div class="container">
     <form action="{{url_for("view.cadastro_pront")}}", method="post">
-        <fieldset class="grid"> 
+        {{ prontuario.csrf_token }}
+        <fieldset class="grid_prontuario"> 
             <div>
                 {{ prontuario.hidden_tag() }}
                 {{ prontuario.nome.label }}
@@ -18,7 +19,7 @@
                 {{ prontuario.cpf.label}}
                 {{ prontuario.cpf()}}
             </div>
-            <div>
+            <div >
                 {{ prontuario.hidden_tag() }}
                 {{ prontuario.nasc.label }}
                 {{ prontuario.nasc(id="nascimento")}}
@@ -28,17 +29,17 @@
                 {{ prontuario.sus.label }}
                 {{ prontuario.sus() }}
             </div>
-            <div>
+            <div >
                 {{ prontuario.hidden_tag() }}
                 {{ prontuario.alergia.label }}
                 {{ prontuario.alergia() }}
             </div>
-            <div>
+            <div >
                 {{ prontuario.hidden_tag() }}
                 {{ prontuario.doenca.label }}
                 {{ prontuario.doenca() }}
             </div>
-            <div>
+            <div >
                 {{ prontuario.hidden_tag() }}
                 {{ prontuario.historico.label }}
                 {{ prontuario.historico() }}

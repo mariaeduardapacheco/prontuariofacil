@@ -1,6 +1,6 @@
 import click
 from ext.database import db
-from ext.models import models
+from ext.models import tables
 
 def init_app(app):
 

@@ -135,49 +135,75 @@ div.flex-texto h3{
 fieldset{
     border: 0;
 }
-.grid{
+.grid_prontuario{
     display: grid;
     grid-template-areas: 
-    "nome nome nome"
-    "cpf data sus"
-    "alergia alergia alergia"
-    "doenca doenca doenca"
-    "hist hist hist";
+    "nome nome nome nome"
+    "cpf data sus sus"
+    "alergia alergia alergia alergia"
+    "doenca doenca doenca doenca"
+    "hist hist hist hist"
+    ;
     grid-gap: 10px;
     padding-top: 2rem;
     font-size: 0.7em;
     border: 0; 
     margin: 4rem; 
-    
-
 } 
-.grid > div:nth-child(1){
+.grid_prontuario > div:nth-child(1){
     grid-area: nome;
-    grid-row: nome;
-    
-    
 }
-.grid > div:nth-child(2){
+.grid_prontuario > div:nth-child(2){
     grid-area: cpf;
-    
 }
-.grid > div:nth-child(3){
+.grid_prontuario > div:nth-child(3){
     grid-area: data;
     
 }
-.grid > div:nth-child(4){
+.grid_prontuario > div:nth-child(4){
     grid-area: sus;
-    
 }
-.grid > div:nth-child(5){
+.grid_prontuario > div:nth-child(5){
     grid-area: alergia;
 }
-.grid > div:nth-child(6){
+.grid_prontuario > div:nth-child(6){
     grid-area: doenca;
 }
-.grid > div:nth-child(7){
+.grid_prontuario > div:nth-child(7){
     grid-area: hist;
 }
+
+.grid_medico{
+    display: grid;
+    grid-template-areas:
+    "nome" 
+    "crm"
+    "email"
+    "senha"
+    "confirmar"
+    ;
+    grid-gap: 10px;
+    padding-top: 2rem;
+    font-size: 0.7em;
+    border: 0; 
+    margin: 4rem;
+}
+.grid.grid_medico > div:nth-child(1){
+    grid-area: nome;
+}
+.grid.grid_medico > div:nth-child(2){
+    grid-area: crm;
+}
+.grid.grid_medico > div:nth-child(3){
+    grid-area: email;
+}
+.grid.grid_medico > div:nth-child(4){
+    grid-area: senha;
+}
+.grid.grid_medico > div:nth-child(5){
+    grid-area: confirmar;
+}
+
 
 
 form{

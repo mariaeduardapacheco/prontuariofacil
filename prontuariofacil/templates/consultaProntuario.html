@@ -1,8 +1,23 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+<div style="margin: auto;  width: 1000px; height: 800px; background-color: rgb(110, 236, 116); padding: 20px;" class="flex-container">
+    
+    {% for prontuario in read %}
+    <ul>        
+        <li>{{ prontuario }}</li>
+    </ul>
+    {% endfor %}
+    
+    
+    
+</div>
+
+
+
 <a href="{{url_for("view.index")}}"><button type="submit" class="btn-voltar" style="width: 200px;">Voltar</button></a>
 <h2 style="text-align: center; background-color: rgb(252, 167, 156);">Página em construção</h2>
-<img src="{{url_for("static",filename="img/consultaPront.png")}}" alt="">
+<img style="margin:auto" width="100%" src="{{url_for("static",filename="img/consultaPront.png")}}" alt="">
 
 {% endblock content%}

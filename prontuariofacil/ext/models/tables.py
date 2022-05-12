@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-from prontuariofacil.ext.database import db
+from ext.database import db
 
 class Prontuario(db.Model):
     __tablename__ = "prontuario"
@@ -12,6 +12,9 @@ class Prontuario(db.Model):
     doencas = db.Column('doencas', db.String(255))
     historico_fami = db.Column('Historico_fami', db.Text)
 
+    def __repr__(self) -> str:
+        return f'Nome completo do paciente: {self.nome} CPF: {self.cpf} Data de Data de nascimento: {self.nascimento} SUS: {self.numsus} Alergias: {self.alergia}  Doenças pré existentes: {self.doencas} Histórico familiar: {self.historico_fami}'
+
 class Medico(db.Model):
     __tablename__ = "medico"
     id = db.Column('id', db.Integer, primary_key=True)
@@ -19,4 +22,3 @@ class Medico(db.Model):
     crm = db.Column('crm', db.String(25))
     email = db.Column('email', db.String(25))
     senha = db.Column('senha', db.String(25))
-

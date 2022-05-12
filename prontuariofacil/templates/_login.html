@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/prontuariofacil/static/css/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="main" style="width: 100%; min-width: 300px; margin: auto; padding: 15px;">
+                <h1 style="font-family: --font-padrao01; font-size: 2rem;">Login</h1>
+                <form action="" style="font-size: rem;">
+                    <label for="crm">Número do CRM</label>
+                    <input type="crm" name="crm" id="crm" placeholder="Digite o seu CRM" autocomplete="off">
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" id="password" placeholder="Digite sua senha">
+                    <input type="submit" value="Entrar">
+                </form>
+                <p>Ainda não tem conta?</p>
+                <a href="/index2.html">Cadastre-se</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+<!-- 
+    <a href="{{url_for("view.index")}}"><button type="submit" class="btn-voltar" style="width: 200px;">Voltar</button></a>
+    <h2 style="text-align: center; background-color: rgb(252, 167, 156);">Página em construção</h2>
+    <img src="{{url_for("static",filename="img/login.png")}}" alt="">-->
+
+
+{% endblock content%}

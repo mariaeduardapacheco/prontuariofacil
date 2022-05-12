@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for("static",filename="css/style.css")}}">
-    <title>ProntFacil</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for("static",filename="css/style.css")}}">
+  <title>ProntFacil</title>
 </head>
+
 <body>
   <header>
     {% block header %}
     <h1>Bem vindo ao ProntFácil</h1>
     {% endblock header %}
-  {% block content %}
+    {% block content %}
     <div class="container">
       <div class="flex-texto">
-          <div class="text-item">
-            <h2>Pront</h2>
-          </div>
-          <div class="text-item">
-            <h3>Fácil</h3>
-          </div>
+        <div class="text-item">
+          <h2>Pront</h2>
+        </div>
+        <div class="text-item">
+          <h3>Fácil</h3>
+        </div>
       </div>
   </header>
-<div class="container">
-  <div class="flex-container">
-    <div class="flex-button">
-      <a href="{{url_for("view.login")}}"><button type="submit" class="button">Login</button></a>
-    </div>
+  <div class="container">
+    <div class="flex-container">
+      <div class="flex-button">
+        <a href="{{url_for("view.login")}}"><button type="submit" class="button">Login</button></a>
+      </div>
       <div class="flex-button">
         <a href="{{url_for("view.resenha")}}"><button type="submit" class="button">Recuperação de senha</button></a>
       </div>
@@ -35,23 +37,26 @@
         <a href="{{url_for("view.escolha")}}"><button type="submit" class="button">Opção de escolha</button></a>
       </div>
       <div class="flex-button">
-        <a href="{{url_for("view.cadastro_medico")}}"><button type="submit" class="button">Cadastro do médico(a)</button></a>
+        <a href="{{url_for("view.cadastro_medico")}}"><button type="submit" class="button">Cadastro do
+            médico(a)</button></a>
       </div>
       <div class="flex-button">
-        <a href="{{url_for("view.cadastro_pront")}}"><button type="submit" class="button" class="tela-feita">Cadastrar Prontuário</button></a>
+        <a href="{{url_for("view.cadastro_pront")}}"><button type="submit" class="button" class="tela-feita">Cadastrar
+            Prontuário</button></a>
       </div>
       <div class="flex-button">
-        <a href="{{url_for("view.consulta_prontuario")}}"><button type="submit" class="button">Consulta de Prontuário</button></a>
+        <a href="{{url_for("view.consulta_prontuario")}}"><button type="submit" class="button">Consulta de
+            Prontuário</button></a>
       </div>
     </div>
-    
+
   </div>
-  
+
   {% endblock content%}
 </body>
 
 <footer>
-  
+
 </footer>
 
 </html>
