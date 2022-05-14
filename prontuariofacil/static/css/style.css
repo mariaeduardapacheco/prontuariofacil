@@ -1,37 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&family=Rasa&family=Roboto&family=Rouge+Script&family=Stick+No+Bills:wght@300&display=swap&family=Strait&display=swap');
 
-:root{
+:root {
     --cor01: #70ADA2;
     --cor02: #497493;
     --cor03: #82FCE6;
 
     --font-titulo: Rouge Script, Helvetica, sans-serif;
     --font-pront: Rasa Helvetica, sans-serif;
-    --font-facil: Princess Sofia, Arial, Verdana, Helvetica, sans-serif; 
-    --font-padrao01: Strait Arial, Verdana, Helvetica, sans-serif; 
-    --font-padrao02: Roboto, Verdana, Helvetica, sans-serif; 
+    --font-facil: Princess Sofia, Arial, Verdana, Helvetica, sans-serif;
+    --font-padrao01: Strait Arial, Verdana, Helvetica, sans-serif;
+    --font-padrao02: Roboto, Verdana, Helvetica, sans-serif;
 }
-*{
+
+* {
     margin: 0px;
     padding: 0px;
-    
+    border-box;
+
 }
 
 body {
     background-color: var(--cor01);
 }
 
-section{
+section {
     display: flex;
 }
-header h1{
+
+header h1 {
     font-family: var(--font-titulo);
     font-weight: lighter;
     font-size: 10rem;
     color: white;
     text-align: center;
 }
-div.container{    
+
+div.container {
     max-width: 1200px;
     min-width: 300px;
     display: block;
@@ -42,14 +46,14 @@ div.container{
     margin: auto;
 }
 
-.flex-texto{
+.flex-texto {
     display: block;
     text-align: center;
     margin: auto;
-       
+
 }
 
-div.flex-texto h2{
+div.flex-texto h2 {
     margin-right: 8rem;
     font-family: var(--font-pront);
     font-style: normal;
@@ -60,8 +64,8 @@ div.flex-texto h2{
     height: 100%;
 }
 
-div.flex-texto h3{
-    
+div.flex-texto h3 {
+
     font-family: var(--font-facil);
     font-weight: lighter;
     margin-left: 3rem;
@@ -71,34 +75,38 @@ div.flex-texto h3{
     height: 100%;
 
 }
-.linha{
+
+.linha {
     margin: auto;
     width: 75%;
-    
+
 }
-.flex-container{
+
+.flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
-    
+
 }
 
-.flex-button{
+.flex-button {
     flex: 0 1 30%;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+
     /*
     height: 30%;
     margin: 10px;
     width: 40%;
     */
 }
+
 .button {
     margin-top: 5px;
     margin-bottom: 5px;
-    background-color: var(--cor02); /* Green */
+    background-color: var(--cor02);
+    /* Green */
     border: 2px solid var(--cor01);
     color: white;
     padding: 5px;
@@ -110,103 +118,119 @@ div.flex-texto h3{
     height: 60%;
     min-width: 200px;
     min-height: 200px;
-    
-  }
-  
+
+}
+
 .button:hover {
-    background-color: #6eb2e2; /* Green */
+    background-color: #6eb2e2;
+    /* Green */
     color: white;
-    }
-    
-    .btn-voltar{
-        background-color: #6ee29e;
-        font-size: 1.5rem;
+}
+
+.btn-voltar {
+    background-color: #6ee29e;
+    font-size: 1.5rem;
     transition-duration: 0.4s;
     width: 100%;
     height: 60%;
     color: white;
     padding: 5px;
 }
-.btn-voltar:hover {
-    background-color: #7dffb3; /* Green */
-    color: white;
-    }
 
-fieldset{
+.btn-voltar:hover {
+    background-color: #7dffb3;
+    /* Green */
+    color: white;
+}
+
+fieldset {
     border: 0;
 }
-.grid_prontuario{
+
+.grid_prontuario {
     display: grid;
-    grid-template-areas: 
-    "nome nome nome nome"
-    "cpf data sus sus"
-    "alergia alergia alergia alergia"
-    "doenca doenca doenca doenca"
-    "hist hist hist hist"
+    grid-template-areas:
+        "nome nome nome nome"
+        "cpf data sus sus"
+        "alergia alergia alergia alergia"
+        "doenca doenca doenca doenca"
+        "hist hist hist hist"
     ;
     grid-gap: 10px;
     padding-top: 2rem;
     font-size: 0.7em;
-    border: 0; 
-    margin: 4rem; 
-} 
-.grid_prontuario > div:nth-child(1){
+    border: 0;
+    margin: 4rem;
+}
+
+.grid_prontuario>div:nth-child(1) {
     grid-area: nome;
 }
-.grid_prontuario > div:nth-child(2){
+
+.grid_prontuario>div:nth-child(2) {
     grid-area: cpf;
 }
-.grid_prontuario > div:nth-child(3){
+
+.grid_prontuario>div:nth-child(3) {
     grid-area: data;
-    
+
 }
-.grid_prontuario > div:nth-child(4){
+
+.grid_prontuario>div:nth-child(4) {
     grid-area: sus;
 }
-.grid_prontuario > div:nth-child(5){
+
+.grid_prontuario>div:nth-child(5) {
     grid-area: alergia;
 }
-.grid_prontuario > div:nth-child(6){
+
+.grid_prontuario>div:nth-child(6) {
     grid-area: doenca;
 }
-.grid_prontuario > div:nth-child(7){
+
+.grid_prontuario>div:nth-child(7) {
     grid-area: hist;
 }
 
-.grid_medico{
+.grid_medico {
     display: grid;
     grid-template-areas:
-    "nome" 
-    "crm"
-    "email"
-    "senha"
-    "confirmar"
+        "nome"
+        "crm"
+        "email"
+        "senha"
+        "confirmar"
     ;
     grid-gap: 10px;
     padding-top: 2rem;
     font-size: 0.7em;
-    border: 0; 
+    border: 0;
     margin: 4rem;
 }
-.grid.grid_medico > div:nth-child(1){
+
+.grid.grid_medico>div:nth-child(1) {
     grid-area: nome;
 }
-.grid.grid_medico > div:nth-child(2){
+
+.grid.grid_medico>div:nth-child(2) {
     grid-area: crm;
 }
-.grid.grid_medico > div:nth-child(3){
+
+.grid.grid_medico>div:nth-child(3) {
     grid-area: email;
 }
-.grid.grid_medico > div:nth-child(4){
+
+.grid.grid_medico>div:nth-child(4) {
     grid-area: senha;
 }
-.grid.grid_medico > div:nth-child(5){
+
+.grid.grid_medico>div:nth-child(5) {
     grid-area: confirmar;
 }
 
 
 
-form{
+form {
     font-family: var(--font-padrao01);
     font-style: normal;
     font-weight: 400;
@@ -214,7 +238,39 @@ form{
     line-height: 39px;
 }
 
-#submit{
+form input[type=text],
+form input[type=password] {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+form input[type=submit] {
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    background-color: #70ADA2;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+}
+
+form input[type=submit]:hover {
+    background-color: #19806d;
+    transition: 1s;
+}
+
+form input[type=text]:focus {
+    outline: 0;
+}
+
+form input[type=password]:focus {
+    outline: 0;
+}
+
+#submit {
     position: relative;
     top: -2rem;
     display: block;
@@ -224,90 +280,99 @@ form{
     margin: auto;
 }
 
-#nome{
-    width: 100%;    
+#nome {
+    width: 100%;
     margin: auto;
     padding: 0.5rem;
     font-size: 1.5rem;
 }
-#cpf{
-    width: 100%;    
+
+#cpf {
+    width: 100%;
     padding: 0.5rem;
     font-size: 1.5rem;
 }
-#nascimento{
-    width: 100%;    
+
+#nascimento {
+    width: 100%;
     padding: 0.5rem;
     font-size: 1.5rem;
     text-align: center;
 }
-#sus{
-    width: 100%;    
+
+#sus {
+    width: 100%;
     padding: 0.5rem;
     font-size: 1.5rem;
 }
 
-#alergia{
-    width: 100%;    
-    margin: auto;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-}
-#doenca{
-    width: 100%;    
-    margin: auto;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-}
-#historico{
-    width: 100%;    
+#alergia {
+    width: 100%;
     margin: auto;
     padding: 0.5rem;
     font-size: 1.5rem;
 }
 
-label{
+#doenca {
+    width: 100%;
+    margin: auto;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+#historico {
+    width: 100%;
+    margin: auto;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+label {
     display: block;
     text-align: start;
 }
+
 @media (max-width: 1200px) {
-    header h1{
+    header h1 {
         font-family: var(--font-titulo);
         font-weight: lighter;
         font-size: 7rem;
         color: white;
         text-align: center;
     }
-    form{
+
+    form {
         font-family: var(--font-padrao01);
         font-style: normal;
         font-weight: 400;
         font-size: 2rem;
         line-height: 39px;
     }
-        
+
 }
+
 @media (max-width: 750px) {
-    .grid{
+    .grid {
         display: grid;
-        grid-template-areas: 
-        "nome nome "
-        "cpf cpf" 
-        "data data"
-        "sus sus"
-        "alergia alergia "
-        "doenca doenca "
-        "hist hist ";
+        grid-template-areas:
+            "nome nome "
+            "cpf cpf"
+            "data data"
+            "sus sus"
+            "alergia alergia "
+            "doenca doenca "
+            "hist hist ";
         padding: 0.1em;
-        padding-left: 0.3em; 
+        padding-left: 0.3em;
         font-size: 0.7em;
-        border: 0;   
+        border: 0;
     }
-    header h1{
+
+    header h1 {
         font-family: var(--font-titulo);
         font-weight: lighter;
         font-size: 4rem;
         color: white;
         text-align: center;
-    }    
+    }
 }

@@ -2,16 +2,20 @@
 
 {% block content %}
 
-<div style="margin: auto;  width: 1000px; height: 800px; background-color: rgb(110, 236, 116); padding: 20px;" class="flex-container">
-    
-    {% for prontuario in read %}
-    <ul>        
-        <li>{{ prontuario }}</li>
-    </ul>
-    {% endfor %}
-    
-    
-    
+<div style="margin: auto;  width: 1000px; height: 800px; background-color: rgb(110, 236, 116); padding: 20px;"
+    class="flex-container">
+
+    <table>
+        {% for prontuario in read %}
+        <tr>
+            <td style="margin: 5px; padding: 5px;">{{ prontuario }}<a href="{{url_for('view.delete', id=prontuario.id)}}">Delete </a><a href="{{url_for('view.update', id=prontuario.id)}}">update </a>
+            </td>
+        </tr>
+        {% endfor %}
+        
+    </table>
+
+
 </div>
 
 

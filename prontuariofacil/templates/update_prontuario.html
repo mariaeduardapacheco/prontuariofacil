@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block header %}
+<h1>Alterar prontuário do paciente</h1>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <form action="/update/{{prontuario_update.id}}", method="post">
+        {{ prontuario.csrf_token }}
+        <fieldset class="grid_prontuario"> 
+            <div>
+                {{ prontuario.hidden_tag() }}
+                {{ prontuario.nome.label }}
+                {{ prontuario.nome(value=prontuario_update.nome) }}
+            </div>
+            <div>
+                {{ prontuario.hidden_tag() }}
+                {{ prontuario.cpf.label}}
+                {{ prontuario.cpf(value=prontuario_update.cpf)}}
+            </div>
+            <div >
+                {{ prontuario.hidden_tag() }}
+                {{ prontuario.nasc.label }}
+                {{ prontuario.nasc(id="nascimento", value=prontuario_update.nascimento)}}
+            </div>
+            <div>
+                {{ prontuario.hidden_tag() }}
+                {{ prontuario.sus.label }}
+                {{ prontuario.sus(value=prontuario_update.numsus) }}
+            </div>
+            <div >
+                {{ prontuario.hidden_tag() }}
+                {{ prontuario.alergia.label }}
+                {{ prontuario.alergia(value=prontuario_update.alergia) }}
+            </div>
+            <div >
+                {{ prontuario.hidden_tag() }}
+                {{ prontuario.doenca.label }}
+                {{ prontuario.doenca(value=prontuario_update.doencas) }}
+            </div>
+            <div >
+                {{ prontuario.hidden_tag() }}
+                {{ prontuario.historico.label }}
+                {{ prontuario.historico(value=prontuario_update.historico_fami) }}
+            </div>
+        </fieldset>
+            {{ prontuario.submit() }}
+    </form>
+</div>
+
+{% endblock content%}
