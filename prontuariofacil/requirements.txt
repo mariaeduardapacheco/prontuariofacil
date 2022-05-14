@@ -36,6 +36,7 @@ platformdirs==2.5.2
 pluggy==1.0.0
 prompt-toolkit==3.0.29
 -e git+https://github.com/RodriguesAlonso/prontuariofacil.git@2549ff184f6d7ef7cb375c09f09c20fdd95b34a6#egg=prontuariofacil
+psycopg2==2.9.3
 ptyprocess==0.7.0
 pure-eval==0.2.2
 py==1.11.0

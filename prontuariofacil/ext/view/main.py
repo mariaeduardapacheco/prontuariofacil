@@ -1,7 +1,7 @@
 from flask  import Blueprint, render_template, request
-from ext.models.tables import Medico, Prontuario
-from ext.models.form import Form, Form_medico
-from ext.database import db
+from prontuariofacil.ext.models.tables import Medico, Prontuario
+from prontuariofacil.ext.models.form import Form, Form_medico
+from prontuariofacil.ext.database import db
 
 
 bp = Blueprint("view", __name__)

@@ -1,0 +1,1 @@
+web: gunicorn prontuariofacil.app:"create_app()"
