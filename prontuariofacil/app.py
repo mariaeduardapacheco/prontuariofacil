@@ -12,4 +12,3 @@ def create_app():
     cli.init_app(app)
     view.init_app(app)
     return app
-    
