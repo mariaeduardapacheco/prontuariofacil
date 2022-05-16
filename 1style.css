@@ -1,0 +1,76 @@
+body{
+background-color: #70ADA2;
+}
+
+
+.TEXT{
+    position: absolute;
+    width: 1210px;
+    height: 233px;
+    left: 117px;
+    
+    
+    font-family: 'RougeScript';
+    font-weight: 300;
+    font-size: 76px;
+    line-height: 183px;
+    text-align: center;
+    
+    color: #FFFFFF;
+    
+
+}
+
+.form{
+    width: 400px;
+    margin: auto;
+    padding-top: 250px;
+}
+
+.card{
+    box-shadow: 1px 1px 5px rgb(58, 56, 56);
+    background-color: #82FCE6;
+    padding: 30px;
+    border-radius: 5px;
+    Width: 529px;
+    Height: 520px;
+    Left: 455px;
+    bleed: Pass through;
+}
+
+.card-top{
+   
+    text-align: center;
+
+}
+
+.card-group{
+    margin-bottom: 12px;
+
+}
+
+.card-group > label{
+    width: 343px;
+    height: 20px;
+    left: 487px;
+    top: 513px; 
+    display: block;
+}
+
+.card-group > input{
+    border-radius: 5px;
+    outline: 12px;
+    width: 466px;
+    height: 25px;
+    padding: 4px;
+}
+
+.card-group > button{
+    background-color: #497493;
+
+}
+
+.title{
+    color:black;
+    text-align: center;
+}
